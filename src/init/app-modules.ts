@@ -15,7 +15,7 @@ export const initAppModules = [
     username: process.env.MYSQL_USER,
     password: process.env.MYSQL_PASS,
     database: process.env.MYSQL_BASE,
-    host: '127.0.0.1',
+    host: process.env.MYSQL_HOST,
     port: parseInt(process.env.MYSQL_PORT),
     dialect: 'mysql',
     define: {
