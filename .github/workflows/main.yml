@@ -33,7 +33,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
           script: |
-            cd testove
+            cd ~/testove
             rm -rf dist
             rm -rf node_modules
             npm i 
